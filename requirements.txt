@@ -1,0 +1,26 @@
+# ---Core API & Web Framework---
+fastapi  # High-performance web frame work for the API
+uvicorn [standard] # ASGI server to run the FastAPI app
+python-dotenv   # Loading configuration from .env files
+requests      # HTTP library for internal/external API calls
+numpy        # Numerical Processing
+
+#--Gemini Embeddings--
+google-generativeai # Gemini API- embeddings (text -embedding -004/Gemini -embedding-001
+langchain-google-genai # Langchain integration for Gemini models
+sentence-transformers # Local fallback embedding model when the Gemini API isn't avaible
+
+#--- Vector Database & Retrieval
+qdrant-client # vector database for semantic search
+
+#--Data ingestiong & Document Parsing
+unstructured #Base library for DOC/PPTX partionining
+python-pptx # Parser for Powerpoint files
+python-docx # Parser for worddocument files
+beautifulsoup4 # High speed HTML text extractor
+pdfplumber  # Fallback PDF parser for scanned/complex layouts
+
+# Observability & distributed tracing
+logfire [fastapi,requests] #pydantic logfire,traces the ingestion pipeline
+loguru # Enhanced logging for pythonuv
+
